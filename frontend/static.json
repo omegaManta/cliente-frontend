@@ -1,8 +1,0 @@
-{
-    "root": "dist/prototipo1",
-    "clean_urls": false,
-    "routes": {
-      "/**": "index.html"
-    }
-  }
-  

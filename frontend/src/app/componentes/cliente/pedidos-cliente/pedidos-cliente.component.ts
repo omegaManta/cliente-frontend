@@ -119,8 +119,8 @@ recibo: any = [];
 eliminarpedido(idpedido: number){
 this.serviciopedido.eliminarpedido(idpedido).subscribe(
   res=>{
-       window.location.reload();
        this.success();
+       this.router.navigate(['/home']);
   }
 )
 }
@@ -136,7 +136,7 @@ success(){
     position: 'top-end',
     width: 400,
     icon: 'warning',
-    title: 'Pedido eliminado',
+    title: 'Pedido eliminado, pida de nuevo',
     showConfirmButton: false,
     timer: 1500
   })

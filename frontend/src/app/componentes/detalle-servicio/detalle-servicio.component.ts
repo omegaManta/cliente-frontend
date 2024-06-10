@@ -122,7 +122,7 @@ crearpedido() {
       .subscribe(
         res => {
           this.informacion();
-          window.location.reload();
+          this.router.navigate(['/pedidos-cliente']);
         }
        )
   } else {
